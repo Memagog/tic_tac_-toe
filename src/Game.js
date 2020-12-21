@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 function Square(props){  
@@ -70,9 +71,10 @@ class Board extends React.Component {
           {this.renderSquare(7)}
           {this.renderSquare(8)}
         </div>
-        <button type="button" onClick={ this.restartGame.bind(this) }>
-             <span>Новая игра</span>
-        </button>
+        
+        <button type="button" class="btn btn-primary btn-sm" onClick={ this.restartGame.bind(this) }>New Game</button>
+        <button type="button" class="btn btn-secondary btn-sm"><Link to="/">New Room</Link></button>
+        
       </div>
     );
   }
@@ -85,10 +87,7 @@ class Game extends React.Component {
         <div className="game-board">
           <Board />
         </div>
-        <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
-        </div>
+        
       </div>
     );
   }

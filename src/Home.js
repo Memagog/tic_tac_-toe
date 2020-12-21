@@ -75,7 +75,7 @@ class Home extends Component {
                         
                         <div class="form-group">
                           <label for="exampleInputEmail1">Теги к игре</label>
-                          <input type="email" class="form-control" id="addInput"  aria-describedby="emailHelp"/>
+                          <input type="text" class="form-control" id="addInput"  aria-describedby="emailHelp"/>
                           <small id="emailHelp" class="form-text text-muted">Пишите теги через пробел</small>
                         </div>
                     
